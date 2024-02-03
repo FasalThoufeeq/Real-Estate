@@ -89,22 +89,42 @@
         <div
           class="img overlay"
           style="background-image: url('images/hero_bg_3.jpg')"
-        ></div>
+        >
+          <div class="text-container">
+            <h1 class="heading" data-aos="fade-up">
+              Your Property, Our Expertise, Infinite Possibilities
+            </h1>
+          </div>
+        </div>
+
         <div
           class="img overlay"
           style="background-image: url('images/hero_bg_2.jpg')"
-        ></div>
+        >
+          <div class="text-container">
+            <h1 class="heading" data-aos="fade-up">
+              Driving Visibility, Maximizing Value, One Property at a Time
+            </h1>
+          </div>
+        </div>
+
         <div
           class="img overlay"
           style="background-image: url('images/hero_bg_1.jpg')"
-        ></div>
+        >
+          <div class="text-container">
+            <h1 class="heading" data-aos="fade-up">
+              Elevating Property Marketing to New Heights
+            </h1>
+          </div>
+        </div>
       </div>
 
-      <div class="container">
+      <div class="container" style="margin-top: 10%">
         <div class="row justify-content-center align-items-center">
           <div class="col-lg-9 text-center">
             <h1 class="heading" data-aos="fade-up">
-              Easiest way to find your dream home
+              Elevating Property Marketing to New Heights
             </h1>
             <form
               action="#"
@@ -114,10 +134,13 @@
             >
               <input
                 type="text"
+                id="property-search"
                 class="form-control px-4"
                 placeholder="Your ZIP code or City. e.g. New York"
               />
-              <button type="submit" class="btn btn-primary">Search</button>
+              <button type="submit" id="search-btn" class="btn btn-primary">
+                Search
+              </button>
             </form>
           </div>
         </div>
@@ -147,7 +170,7 @@
           <div class="col-12">
             <div class="property-slider-wrap">
               <div class="property-slider">
-                <div class="property-item">
+                <div class="property-item property-searchable">
                   <a href="property-single.html" class="img">
                     <img src="images/img_1.jpg" alt="Image" class="img-fluid" />
                   </a>
@@ -158,7 +181,7 @@
                       <span class="d-block mb-2 text-black-50"
                         >5232 California Fake, Ave. 21BC</span
                       >
-                      <span class="city d-block mb-3">California, USA</span>
+                      <span class="city d-block mb-3">KERALA, INDIA</span>
 
                       <div class="specs d-flex mb-4">
                         <span class="d-block d-flex align-items-center me-3">
@@ -181,7 +204,7 @@
                 </div>
                 <!-- .item -->
 
-                <div class="property-item">
+                <div class="property-item property-searchable">
                   <a href="property-single.html" class="img">
                     <img src="images/img_2.jpg" alt="Image" class="img-fluid" />
                   </a>
@@ -215,7 +238,7 @@
                 </div>
                 <!-- .item -->
 
-                <div class="property-item">
+                <div class="property-item property-searchable">
                   <a href="property-single.html" class="img">
                     <img src="images/img_3.jpg" alt="Image" class="img-fluid" />
                   </a>
@@ -249,7 +272,7 @@
                 </div>
                 <!-- .item -->
 
-                <div class="property-item">
+                <div class="property-item property-searchable">
                   <a href="property-single.html" class="img">
                     <img src="images/img_4.jpg" alt="Image" class="img-fluid" />
                   </a>
@@ -283,7 +306,7 @@
                 </div>
                 <!-- .item -->
 
-                <div class="property-item">
+                <div class="property-item property-searchable">
                   <a href="property-single.html" class="img">
                     <img src="images/img_5.jpg" alt="Image" class="img-fluid" />
                   </a>
@@ -317,7 +340,7 @@
                 </div>
                 <!-- .item -->
 
-                <div class="property-item">
+                <div class="property-item property-searchable">
                   <a href="property-single.html" class="img">
                     <img src="images/img_6.jpg" alt="Image" class="img-fluid" />
                   </a>
@@ -351,7 +374,7 @@
                 </div>
                 <!-- .item -->
 
-                <div class="property-item">
+                <div class="property-item property-searchable">
                   <a href="property-single.html" class="img">
                     <img src="images/img_7.jpg" alt="Image" class="img-fluid" />
                   </a>
@@ -385,7 +408,7 @@
                 </div>
                 <!-- .item -->
 
-                <div class="property-item">
+                <div class="property-item property-searchable">
                   <a href="property-single.html" class="img">
                     <img src="images/img_8.jpg" alt="Image" class="img-fluid" />
                   </a>
@@ -419,7 +442,7 @@
                 </div>
                 <!-- .item -->
 
-                <div class="property-item">
+                <div class="property-item property-searchable">
                   <a href="property-single.html" class="img">
                     <img src="images/img_1.jpg" alt="Image" class="img-fluid" />
                   </a>
@@ -487,32 +510,39 @@
           <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
             <div class="box-feature">
               <span class="flaticon-house"></span>
-              <h3 class="mb-3">Our Properties</h3>
+              <h3 class="mb-3">Property Marketing</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Voluptates, accusamus.
+                With our extensive network and strategic marketing approach, we
+                showcase properties effectively to attract the right buyers,
+                sellers, tenants, and landlords
               </p>
+              <br />
               <p><a href="#" class="learn-more">Learn More</a></p>
+              <br />
             </div>
           </div>
           <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
             <div class="box-feature">
               <span class="flaticon-building"></span>
-              <h3 class="mb-3">Property for Sale</h3>
+              <h3 class="mb-3">Help to Buy</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Voluptates, accusamus.
+                Whether you're a first-time buyer or an experienced investor, we
+                provide expert guidance and support throughout the buying
+                process, helping you find the perfect property at the best price
               </p>
               <p><a href="#" class="learn-more">Learn More</a></p>
+              <br />
             </div>
           </div>
           <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
             <div class="box-feature">
               <span class="flaticon-house-3"></span>
-              <h3 class="mb-3">Real Estate Agent</h3>
+              <h3 class="mb-3">Rent & Lease</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Voluptates, accusamus.
+                Looking to rent out your property or find your ideal rental
+                space? Our team assists both landlords and tenants in navigating
+                the rental market with ease, ensuring fair agreements and
+                smooth transactions
               </p>
               <p><a href="#" class="learn-more">Learn More</a></p>
             </div>
@@ -520,10 +550,12 @@
           <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
             <div class="box-feature">
               <span class="flaticon-house-1"></span>
-              <h3 class="mb-3">House for Sale</h3>
+              <h3 class="mb-3">Property Management</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Voluptates, accusamus.
+                Entrust your property management responsibilities to us for
+                efficient day-to-day operations, maintenance, tenant relations,
+                and financial management. We strive to maximize your property's
+                value while minimizing hassle and risk
               </p>
               <p><a href="#" class="learn-more">Learn More</a></p>
             </div>
@@ -560,10 +592,11 @@
                 <span class="icon-home2"></span>
               </span>
               <div class="feature-text">
-                <h3 class="heading">2M Properties</h3>
+                <h3 class="heading">Expertise</h3>
                 <p class="text-black-50">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nostrum iste.
+                  Backed by years of experience and industry knowledge, our team
+                  delivers unparalleled expertise and guidance at every step of
+                  your property journey
                 </p>
               </div>
             </div>
@@ -573,10 +606,11 @@
                 <span class="icon-person"></span>
               </span>
               <div class="feature-text">
-                <h3 class="heading">Top Rated Agents</h3>
+                <h3 class="heading">Personalized Service</h3>
                 <p class="text-black-50">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nostrum iste.
+                  We understand that each client and property is unique. That's
+                  why we offer personalized solutions tailored to your specific
+                  requirements and goals
                 </p>
               </div>
             </div>
@@ -586,10 +620,25 @@
                 <span class="icon-security"></span>
               </span>
               <div class="feature-text">
-                <h3 class="heading">Legit Properties</h3>
+                <h3 class="heading">Transparency</h3>
                 <p class="text-black-50">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nostrum iste.
+                  We believe in open communication and transparency throughout
+                  our interactions, ensuring you stay informed and empowered
+                  throughout the process.
+                </p>
+              </div>
+            </div>
+            <div class="d-flex feature-h">
+              <span class="wrap-icon me-3">
+                <span class="icon-security"></span>
+              </span>
+              <div class="feature-text">
+                <h3 class="heading">Results-Driven Approach</h3>
+                <p class="text-black-50">
+                  Our goal is to achieve optimal outcomes for our clients,
+                  whether it's securing the best deal, finding the perfect
+                  property, or maintaining a high standard of
+                  property management
                 </p>
               </div>
             </div>
@@ -768,5 +817,47 @@
     <script src="js/navbar.js"></script>
     <script src="js/counter.js"></script>
     <script src="js/custom.js"></script>
+    <!-- Add these in the head section of your HTML -->
+    <link rel="stylesheet" href="path/to/swiper.min.css" />
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Function to filter properties based on search input
+        function filterProperties() {
+          var searchTerm = document
+            .getElementById("property-search")
+            .value.toLowerCase();
+          var propertyItems = document.querySelectorAll(".property-item");
+          console.log(searchTerm);
+
+          propertyItems.forEach(function (item) {
+            var propertyDetails = item.textContent.toLowerCase();
+            var shouldShow = propertyDetails.includes(searchTerm);
+
+            if (shouldShow) {
+              item.classList.remove("hidden");
+              console.log("Show:", propertyDetails);
+            } else {
+              item.classList.add("hidden");
+              console.log("Hide:", propertyDetails);
+            }
+          });
+        }
+
+        // Trigger filterProperties function on search button click
+        document
+          .getElementById("search-btn")
+          .addEventListener("click", function () {
+            filterProperties();
+          });
+
+        // Trigger filterProperties function on input change
+        document
+          .getElementById("property-search")
+          .addEventListener("input", function () {
+            filterProperties();
+          });
+      });
+    </script>
   </body>
 </html>
