@@ -1,0 +1,559 @@
+<!-- /*
+* Template Name: Property
+* Template Author: Untree.co
+* Template URI: https://untree.co/
+* License: https://creativecommons.org/licenses/by/3.0/
+*/ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Untree.co" />
+    <link rel="shortcut icon" href="./images/One Deals New Logo.png" />
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="bootstrap, bootstrap5" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css" />
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
+
+    <link rel="stylesheet" href="css/tiny-slider.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/form.css" />
+
+    <title>Onedeals Property</title>
+  </head>
+  <body>
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close">
+          <span class="icofont-close js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+    <nav class="site-nav">
+      <div class="container">
+        <div class="menu-bg-wrap">
+          <div class="site-navigation">
+            <a href="index.html" class="logo m-0 float-start"
+              ><img
+                src="./images/One Deals New Logo white.png"
+                style="width: 50px; height: 50px"
+                alt=""
+            /></a>
+
+            <ul
+              class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end"
+            >
+              <li class="active"><a href="index.html">Home</a></li>
+              <li class="has-children">
+                <a href="properties.html">Properties</a>
+                <ul class="dropdown">
+                  <li><a href="#">Buy Property</a></li>
+                  <li><a href="#">Sell Property</a></li>
+                  <li><a href="#">Rent/Lease</a></li>
+                </ul>
+              </li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+
+            <a
+              href="#"
+              class="burger light me-auto float-end mt-1 site-menu-toggle js-menu-toggle d-inline-block d-lg-none"
+              data-toggle="collapse"
+              data-target="#main-navbar"
+            >
+              <span></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      class="hero page-inner overlay"
+      style="background-image: url('images/hero_bg_1.jpg')"
+    >
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-lg-9 text-center mt-5">
+            <h1 class="heading" data-aos="fade-up">REAL ESTATE</h1>
+            <h3 data-aos="fade-up" style="color: white">
+              One Deals could offer a range of services
+            </h3>
+
+            <nav
+              aria-label="breadcrumb"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <ol class="breadcrumb text-center justify-content-center">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li
+                  class="breadcrumb-item active text-white-50"
+                  aria-current="page"
+                >
+                  Form
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="realestate-form"
+      style="
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      "
+    ></div>
+    <div class="container">
+      <div class="form-style-5">
+        <form id="realEstateForm">
+          <fieldset>
+            <legend><span class="number">1</span> Your Info</legend>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6">
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Your Name *"
+                  />
+                </div>
+                <div class="col-lg-6">
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Your Email *"
+                  />
+                </div>
+                <div class="col-lg-6">
+                  <input
+                    type="text"
+                    name="number"
+                    id="number"
+                    placeholder="Your Number *"
+                  />
+                </div>
+                <div class="col-lg-6">
+                  <input
+                    type="text"
+                    name="address"
+                    id="address"
+                    placeholder="Current Address *"
+                  />
+                </div>
+                <div class="col-lg-6">
+                  <label for="transaction">Types of Transaction</label>
+                  <select id="transaction" name="transaction">
+                    <optgroup label="Please Select One">
+                      <option value="Sale">Sale</option>
+                      <option value="Purchase">Purchase</option>
+                      <option value="Rent/Lease">Rent/Lease</option>
+                    </optgroup>
+                  </select>
+                </div>
+                <div class="col-lg-6">
+                  <label for="property">Property Preferences</label>
+                  <select id="property" name="property">
+                    <optgroup label="Please Select One">
+                      <option value="House">House</option>
+                      <option value="Apartment">Apartment</option>
+                      <option value="Condo">Condo</option>
+                      <option value="Townhouse">Townhouse</option>
+                      <option value="Other">Other</option>
+                    </optgroup>
+                  </select>
+                </div>
+                <div class="col-lg-6">
+                  <label for="bedrooms">Number Of Bedrooms</label>
+                  <select id="bedrooms" name="bedrooms">
+                    <optgroup label="Please Select One">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4+">4+</option>
+                    </optgroup>
+                  </select>
+                </div>
+                <div class="col-lg-6">
+                  <label for="bathrooms">Number Of Bathrooms</label>
+                  <select id="bathrooms" name="bathrooms">
+                    <optgroup label="Please Select One">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4+">4+</option>
+                    </optgroup>
+                  </select>
+                </div>
+                <div
+                  class="col-lg-12"
+                  style="margin-top: 10px; margin-bottom: 20px"
+                >
+                  <label for="amenities" style="margin-bottom: 10px"
+                    >Preferred Amenities (if applicable)</label
+                  >
+                  <div
+                    style="display: flex; align-items: center; flex-wrap: wrap"
+                  >
+                    <input
+                      type="checkbox"
+                      id="parkingSpace"
+                      name="amenities"
+                      value="Parking Space"
+                      style="margin-right: 5px"
+                    />
+                    <label for="parkingSpace" style="margin-right: 15px"
+                      >Parking Space</label
+                    >
+
+                    <input
+                      type="checkbox"
+                      id="swimmingPool"
+                      name="amenities"
+                      value="Swimming Pool"
+                      style="margin-right: 5px"
+                    />
+                    <label for="swimmingPool" style="margin-right: 15px"
+                      >Swimming Pool</label
+                    >
+
+                    <input
+                      type="checkbox"
+                      id="gymFitnessCenter"
+                      name="amenities"
+                      value="Gym/Fitness Center"
+                      style="margin-right: 5px"
+                    />
+                    <label for="gymFitnessCenter" style="margin-right: 15px"
+                      >Gym/Fitness Center</label
+                    >
+
+                    <input
+                      type="checkbox"
+                      id="gardenYard"
+                      name="amenities"
+                      value="Garden/Yard"
+                      style="margin-right: 5px"
+                    />
+                    <label for="gardenYard" style="margin-right: 15px"
+                      >Garden/Yard</label
+                    >
+
+                    <input
+                      type="checkbox"
+                      id="otherAmenity"
+                      name="amenities"
+                      value="Other"
+                      style="margin-right: 5px"
+                    />
+                    <label for="otherAmenity" style="margin-right: 15px"
+                      >Other</label
+                    >
+                  </div>
+                </div>
+
+                <div class="col-lg-6">
+                  <label for="transaction">Budget</label>
+                  <input
+                    type="text"
+                    id="minimum"
+                    name="minimum"
+                    placeholder="Minimum *"
+                  />
+                </div>
+                <div class="col-lg-6">
+                  <label for="transaction">Budget</label>
+                  <input
+                    type="text"
+                    id="maximum"
+                    name="maximum"
+                    placeholder="Maximum *"
+                  />
+                </div>
+                <div class="col-lg-6">
+                  <label for="contact_method">Preferred Contact Method</label>
+                  <select id="contact_method" name="contact_method">
+                    <optgroup label="Please Select One">
+                      <option value="Phone">Phone</option>
+                      <option value="Email">Email</option>
+                      <option value="Text Message">Text Message</option>
+                    </optgroup>
+                  </select>
+                </div>
+                <div class="col-lg-6">
+                  <label for="contact_time">Preferred Time for Contact</label>
+                  <select id="contact_time" name="contact_time">
+                    <optgroup label="Please Select One">
+                      <option value="Morning">Morning</option>
+                      <option value="Afternoon">Afternoon</option>
+                      <option value="Evening">Evening</option>
+                    </optgroup>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend><span class="number">2</span> Additional Info</legend>
+            <div class="col-lg-12">
+              <label for="hear_about_us">How did you hear about us?</label>
+              <select id="hear_about_us" name="hear_about_us">
+                <optgroup label="Please Select One">
+                  <option value="Online Advertisement">
+                    Online Advertisement
+                  </option>
+                  <option value="Referral">Referral</option>
+                  <option value="Social Media">Social Media</option>
+                  <option value="Other">Other</option>
+                </optgroup>
+              </select>
+            </div>
+            <textarea
+              name="additional_comments"
+              placeholder="Additional Comments/Requirements"
+            ></textarea>
+          </fieldset>
+          <input type="submit" value="Apply" />
+        </form>
+      </div>
+    </div>
+
+    <div class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="widget">
+              <h3>Cusomer Care</h3>
+              <ul class="list-unstyled links">
+                <li>
+                  <a href="mailto:info@mydomain.com">support@onedeals.co.in</a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.widget -->
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <div class="widget">
+              <h3>Sources</h3>
+              <ul class="list-unstyled float-start links">
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Vision</a></li>
+                <li><a href="#">Mission</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Privacy</a></li>
+              </ul>
+              <ul class="list-unstyled float-start links">
+                <li><a href="#">Partners</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Creative</a></li>
+              </ul>
+            </div>
+            <!-- /.widget -->
+          </div>
+          <!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <div class="widget">
+              <h3>Links</h3>
+              <ul class="list-unstyled links">
+                <li><a href="#">Our Vision</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+              </ul>
+
+              <ul class="list-unstyled social">
+                <li>
+                  <a href="#"><span class="icon-instagram"></span></a>
+                </li>
+
+                <li>
+                  <a href="#"><span class="icon-facebook"></span></a>
+                </li>
+                <li>
+                  <a href="#"><span class="icon-linkedin"></span></a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.widget -->
+          </div>
+          <!-- /.col-lg-4 -->
+        </div>
+        <!-- /.row -->
+      </div>
+    </div>
+
+    <!-- Preloader -->
+    <div id="overlayer"></div>
+    <div class="loader">
+      <div class="spinner-border" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/tiny-slider.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+
+    <script>
+      document.getElementById("email").addEventListener("blur", function () {
+        if (!validateEmailFormat()) {
+          // Display a toast message if the email format is invalid
+          Toastify({
+            text: "Please enter a valid email address",
+            duration: 3000, // Duration in milliseconds
+            gravity: "top", // Display position
+            position: "center",
+            backgroundColor: "linear-gradient(to right, #ff9800, #ff5722)", // Background color
+          }).showToast();
+          event.preventDefault();
+          return;
+        }
+      });
+      document
+        .getElementById("realEstateForm")
+        .addEventListener("submit", function (event) {
+          validateEmailFormat();
+          if (!validateForm()) {
+            Toastify({
+              text: "Please fill in all the required fields",
+              duration: 3000,
+              gravity: "bottom",
+              position: "center",
+              backgroundColor: "linear-gradient(to right, #ff9800, #ff5722)",
+            }).showToast();
+            event.preventDefault();
+          } else {
+            event.preventDefault();
+            // var formData = new FormData(this);
+            var formDataObject = {};
+            var formElements = this.elements;
+            for (var i = 0; i < formElements.length; i++) {
+              var element = formElements[i];
+              var elementName = element.name;
+              var elementType = element.type;
+
+              // Handle different form elements
+              if (elementName) {
+                if (elementType === "checkbox") {
+                  // Handle checkboxes separately to get an array of selected values
+                  formDataObject[elementName] =
+                    formDataObject[elementName] || [];
+                  if (element.checked) {
+                    formDataObject[elementName].push(element.value);
+                  }
+                } else {
+                  // For other elements, simply get their values
+                  formDataObject[elementName] = element.value;
+                }
+              }
+            }
+            // formData.forEach(function (value, key) {
+            //   formDataObject[key] = value;
+            // });
+            console.log(formDataObject);
+
+            (function () {
+              emailjs.init("loARgRmXVBQ91yema");
+            })();
+
+            let serviceID = "service_8enuxsg";
+            let templateID = "template_06uoq6p";
+            let params = {
+              senderName: formDataObject?.name,
+              email: formDataObject?.email,
+              subject: "Enquiry for REAL ESTATE with requirements ",
+              phoneNumber: formDataObject?.number,
+              address: formDataObject?.address,
+              property: formDataObject?.property,
+              bedrooms: formDataObject?.bedrooms,
+              bathrooms: formDataObject?.bathrooms,
+              amenities: formDataObject?.amenities
+                ? formDataObject?.amenities
+                : "No Amenities available",
+              maximum: formDataObject?.maximum,
+              minimum: formDataObject?.minimum,
+              contact_method: formDataObject?.contact_method,
+              contact_time: formDataObject?.contact_time,
+              hear_about_us: formDataObject?.hear_about_us,
+              additional_comments: formDataObject?.additional_comments
+                ? formDataObject?.additional_comments
+                : "No Additional Comments Available",
+            };
+
+            emailjs.send(serviceID, templateID, params).then((res) => {
+              console.log("ooooo");
+              function showToast() {
+                Toastify({
+                  text: "Thank you! We will reach you soon.",
+                  duration: 3000,
+                  gravity: "bottom",
+                  position: "center",
+                  backgroundColor:
+                    "linear-gradient(to right, #00b09b, #96c93d)",
+                }).showToast();
+              }
+              showToast();
+            });
+          }
+        });
+
+      function validateForm() {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var number = document.getElementById("number").value;
+        var address = document.getElementById("address").value;
+        var minimum = document.getElementById("minimum").value;
+        var maximum = document.getElementById("maximum").value;
+
+        return (
+          name.trim() !== "" &&
+          email.trim() !== "" &&
+          number.trim() !== "" &&
+          address.trim() !== "" &&
+          minimum.trim() !== "" &&
+          maximum.trim() !== ""
+        );
+      }
+      function validateEmailFormat() {
+        var email = document.getElementById("email").value;
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        console.log(emailRegex.test(email));
+        return emailRegex.test(email);
+      }
+    </script>
+  </body>
+</html>
