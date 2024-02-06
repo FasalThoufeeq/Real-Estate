@@ -25,6 +25,12 @@
     <link rel="stylesheet" href="fonts/icomoon/style.css" />
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
 
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+
     <link rel="stylesheet" href="css/tiny-slider.css" />
     <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -67,7 +73,7 @@
               </li>
               <li><a href="services.html">Services</a></li>
               <li><a href="about.html">About</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="real-estate-form.html">Contact Us</a></li>
             </ul>
 
             <a
@@ -510,11 +516,11 @@
             console.log(formDataObject);
 
             (function () {
-              emailjs.init("loARgRmXVBQ91yema");
+              emailjs.init("pJ7nZwisEtAEkwS69");
             })();
 
-            let serviceID = "service_8enuxsg";
-            let templateID = "template_06uoq6p";
+            let serviceID = "service_5afmptk";
+            let templateID = "template_gojkda5";
             let params = {
               senderName: formDataObject?.name,
               email: formDataObject?.email,
@@ -522,6 +528,7 @@
               phoneNumber: formDataObject?.number,
               address: formDataObject?.address,
               property: formDataObject?.property,
+              transaction:formDataObject?.transaction,
               bedrooms: formDataObject?.bedrooms,
               bathrooms: formDataObject?.bathrooms,
               amenities: formDataObject?.amenities
